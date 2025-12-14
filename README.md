@@ -1,8 +1,7 @@
 # ⚡ Nitin Jha | Portfolio
 
 
-> **Live Demo:** [nitinjha.dev]('#)  
-> **Status:** 🚀 Production Ready
+> **Live Demo:** [https://nitin-jha.vercel.app](https://nitin-jha.vercel.app)  
 
 ---
 
@@ -38,7 +37,7 @@ If you want to poke around the code or try the design (go ahead, it's cool), her
 
 1.  **Clone the repo:**
     ```bash
-    git clone [https://github.com/nitinjha7/my-portfolio](https://github.com/nitinjha7/my-portfolio)
+    git clone https://github.com/nitinjha7/my-portfolio.git
     cd portfolio-v1
     ```
 
@@ -54,15 +53,6 @@ If you want to poke around the code or try the design (go ahead, it's cool), her
     ```
 
 Open `http://localhost:3000` and you are good to go.
-
----
-
-## 🧠 Key Code Highlights
-
-If you are looking at the source code, check out these files:
-
-* `components/Skills3D.tsx`: This is where the **3D Tilt Logic** lives. I used `useMotionValue` and `useTransform` to calculate rotation based on the mouse cursor's X/Y coordinates relative to the card center.
-* `components/Navbar.tsx`: Handles the scroll event listeners to trigger the glass effect only after scrolling 20px.
 
 ---
 
