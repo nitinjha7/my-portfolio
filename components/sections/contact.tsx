@@ -15,15 +15,23 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitting(true)
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
 
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+      if (!res.ok) throw new Error("Failed")
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormData({ name: "", email: "", message: "" })
+      setIsSubmitted(true)
+      setFormData({ name: "", email: "", message: "" })
+      setTimeout(() => setIsSubmitted(false), 2500)
 
-    setTimeout(() => setIsSubmitted(false), 3000)
+    } catch (err) {
+      console.error(err)
+      alert("Something went wrong. Try again later.")
+    }
   }
 
   const socials = [

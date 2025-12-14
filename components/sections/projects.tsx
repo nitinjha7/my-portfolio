@@ -33,12 +33,12 @@ const projects = [
     color: "#34d399"
   },
   {
-    title: "Portfolio V1",
-    subtitle: "Interactive 3D Experience",
+    title: "My Portfolio",
+    subtitle: "Interactive Experience",
     description: "Current site. Leveraging Framer Motion for complex gesture handling and Three.js concepts for depth. Built with strict TypeScript and component modularity.",
     tags: ["Next.js", "Framer Motion", "TypeScript", "3D"],
-    live: "#",
-    github: "#",
+    live: "https://nitin-jha.vercel.app/",
+    github: "https://github.com/nitinjha7/my-portfolio",
     color: "#f472b6"
   },
 ]
